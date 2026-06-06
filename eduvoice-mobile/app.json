@@ -18,7 +18,10 @@
         "backgroundColor": "#0A0E1A"
       },
       "package": "com.eduvoice.ai",
-      "permissions": ["android.permission.RECORD_AUDIO"]
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "bundler": "metro"
@@ -34,7 +37,12 @@
     ],
     "scheme": "eduvoice",
     "extra": {
-      "router": { "origin": false }
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1f7fa71d-ff92-4b33-9dda-fbf49733cc79"
+      }
     }
   }
 }
